@@ -12,7 +12,7 @@ Then you'll need to call `dotnet build .\Compiler.sln -c Release /clp:ErrorsOnly
 
 i've made [a cmd script](https://github.com/SomeRandomNoobKekeke/Barotrauma-CS-hybrid-compiler/blob/main/Example%20Compile.cmd) that you can just put in your "in memory" mod folder, change some vars there and then click it
 
-I just have "f5 anything" extension in VSCode, so i just press f5 and it's compiling
+I have "f5 anything" extension in VSCode, so i just press f5 and it's compiling
 
 ## Why???:
 Big "in memory" mods might take too much time to compile for users and there's no easy way to hot reload precompiled mod  
@@ -31,5 +31,6 @@ Sometimes it fails with "can't access stuff, blocked by another process", just a
 
 Also i'm not batch/MSBuild expert, used it for the first time in my life, not sure if it works on other systems, works at least on windows 11  
 Scripts for other systems, advices are welcome
+
 
 

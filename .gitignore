@@ -3,7 +3,7 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-[Rr]efs/
+[Rr]efs/**/*.dll
 *.DotSettings.user
 
 # User-specific files

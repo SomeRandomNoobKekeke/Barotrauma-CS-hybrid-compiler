@@ -1,0 +1,13 @@
+<Project>
+    <!-- Should be passed as command line params -->
+    <!-- Paths should end in \ -->
+    <PropertyGroup>
+        <!-- <ModAssemblyName> MyAssembly </ModAssemblyName> -->
+        <!-- <ModRootNamespace> MyNamespace </ModRootNamespace> -->
+        <!-- <SourceModDir> Folder of "in memory" mod </SourceModDir> -->
+        <!-- <ModDeployDir> Folder of compiled mod </ModDeployDir> -->
+    </PropertyGroup>
+    <PropertyGroup>
+        <AssemblyName>$(ModAssemblyName)</AssemblyName>
+    </PropertyGroup>
+</Project>

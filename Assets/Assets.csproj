@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>ModAssets</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="../Build.props" />
+
+  <Target Name="CopyFiles" AfterTargets="Build">
+    <ItemGroup>
+      <Content Include="$(SourceModDir)Content\**\*.*" />
+      <LuaStuff Include="$(SourceModDir)Lua\**\*.*" />
+      <RunConfig Include="$(SourceModDir)CSharp\RunConfig.xml" />
+    </ItemGroup>
+    <Copy SourceFiles="@(Content)" DestinationFolder="$(ModDeployDir)Content\%(RecursiveDir)" />
+    <Copy SourceFiles="@(LuaStuff)" DestinationFolder="$(ModDeployDir)Lua\%(RecursiveDir)" />
+    <Copy SourceFiles="@(RunConfig)" DestinationFiles="$(ModDeployDir)CSharp\RunConfig.xml" />
+  </Target>
+</Project>

@@ -2,7 +2,7 @@
 
 A tool for compiling any barotrauma C# "in memory" mod into dll mod in one click
 
-It's 99% https://github.com/MapleWheels/VSProjectSkeleton but instead of compiling its own files it accepts a path to "in memory" mod via comand line params and compiles its files into another folder  
+It's 99% https://github.com/MapleWheels/VSProjectSkeleton but instead of compiling its own files it accepts a path to "in memory" mod via command line params and compiles its files into another folder  
 And because it accepts any mod you only need one such thing
 
 ## How to use it:
@@ -29,3 +29,4 @@ Sometimes it fails with "can't access stuff, blocked by another process", just a
 
 Also i'm not batch/MSBuild expert, used it for the first time in my life, not sure if it works on other systems, works at least on windows 11  
 Scripts for other systems, advices are welcome
+

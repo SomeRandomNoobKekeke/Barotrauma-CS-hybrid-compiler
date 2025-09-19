@@ -18,6 +18,8 @@ I just have "f5 anything" extension in VSCode, so i just press f5 and it's compi
 Big "in memory" mods might take too much time to compile for users and there's no easy way to hot reload precompiled mod  
 In theory you can run VS over debug luatrauma but i don't have enough computer for that, also i don't like VS
 
+Also you can't release "in memory" mods with nuget packages, it has to be precompiled, but it's possible to dev "in memory" mod with nuget by running it in custom built barotrauma
+ 
 So i develop mods using cl_reloadlua and then f5 it when i want to release it
 
 ## Notes:
@@ -29,4 +31,5 @@ Sometimes it fails with "can't access stuff, blocked by another process", just a
 
 Also i'm not batch/MSBuild expert, used it for the first time in my life, not sure if it works on other systems, works at least on windows 11  
 Scripts for other systems, advices are welcome
+
 

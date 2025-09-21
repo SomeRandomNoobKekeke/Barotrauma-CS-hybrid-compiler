@@ -1,13 +1,16 @@
+@REM Put this in your "in memory" mod folder
 echo off 
 
 @REM Set those vars
 @REM Note: it's space sensitive
-SET CompileTo=CompileTest
-SET ModAssemblyName=CompileTest
-SET ModRootNamespace=CompileTest
+SET CompileTo=TargetDirectoryPath
+SET ModAssemblyName=SomeName
+SET ModRootNamespace=SomeNamespace
 
 @REM Folder paths should end in /
+@REM Path to compiler, i store it in LocalMods/[ Compiler ]
 SET CompilerDir="../[ Compiler ]/"
+@REM This directory
 SET SourceModDir="%cd%/"
 
 @REM https://stackoverflow.com/a/60046276

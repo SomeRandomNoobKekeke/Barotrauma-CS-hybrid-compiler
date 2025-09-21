@@ -6,7 +6,7 @@ It's 99% https://github.com/MapleWheels/VSProjectSkeleton but instead of compili
 And because it accepts any mod you only need one such thing
 
 ## How to use it:
-Download it and drop it into LocalMods
+Download it and drop it into LocalMods, add luatrauma refs
 
 Then you'll need to call `dotnet build .\Compiler.sln -c Release /clp:ErrorsOnly -p WarningLevel=0 -p:ModAssemblyName=%ModAssemblyName% -p:ModRootNamespace=%ModRootNamespace% -p:SourceModDir=%SourceModDir% -p:ModDeployDir=%ModDeployDir%` in that folder
 
@@ -31,6 +31,7 @@ Sometimes it fails with "can't access stuff, blocked by another process", just a
 
 Also i'm not batch/MSBuild expert, used it for the first time in my life, not sure if it works on other systems, works at least on windows 11  
 Scripts for other systems, advices are welcome
+
 
 
 

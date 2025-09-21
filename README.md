@@ -10,8 +10,8 @@ Download zip and extract [ Compiler ] into LocalMods, add [luatrauma refs](https
 
 Then you'll need to call `dotnet build .\Compiler.sln -c Release /clp:ErrorsOnly -p WarningLevel=0 -p:ModAssemblyName=%ModAssemblyName% -p:ModRootNamespace=%ModRootNamespace% -p:SourceModDir=%SourceModDir% -p:ModDeployDir=%ModDeployDir%` in that folder
 
-You can just drag and drop you "in memory" mod folder into "Compile folder.cmd" script 
-Or copy paste "Example mod compilation script.cmd" into your "in memory" mod folder, change the vasr there and run it
+You can just drag and drop you "in memory" mod folder into "Compile folder.cmd" script  
+Or copy paste "Example mod compilation script.cmd" into your "in memory" mod folder, change the vars there and run it
 
 I have "f5 anything" extension in VSCode, so i just press f5 to compile it
 

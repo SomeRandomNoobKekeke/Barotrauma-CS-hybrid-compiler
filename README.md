@@ -6,7 +6,7 @@ It's 99% https://github.com/MapleWheels/VSProjectSkeleton but instead of compili
 And because it accepts any mod you only need one such thing
 
 ## How to use it:
-Download zip and extract [ Compiler ] into LocalMods, add luatrauma refs to Refs folder
+Download zip and extract [ Compiler ] into LocalMods, add [luatrauma refs](https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip) to Refs folder
 
 Then you'll need to call `dotnet build .\Compiler.sln -c Release /clp:ErrorsOnly -p WarningLevel=0 -p:ModAssemblyName=%ModAssemblyName% -p:ModRootNamespace=%ModRootNamespace% -p:SourceModDir=%SourceModDir% -p:ModDeployDir=%ModDeployDir%` in that folder
 
@@ -24,7 +24,8 @@ Also you can't release "in memory" mods with nuget packages, it has to be precom
 So i develop mods using cl_reloadlua and then f5 it when i want to release it
 
 ## Notes:
-It's also copies Content/** Lua/** CSharp/RunConfig.xml files, check https://github.com/SomeRandomNoobKekeke/Barotrauma-CS-hybrid-compiler/blob/main/Assets/Assets.csproj and edit it as you want
+It's also copies Content/** Lua/** CSharp/RunConfig.xml files, check https://github.com/SomeRandomNoobKekeke/Barotrauma-CS-hybrid-compiler/blob/main/Assets/Assets.csproj and edit it as you want  
+I don't copy filelist so make another one
 
 if you want warnigns remove `/clp:ErrorsOnly` and set `-p WarningLevel=4`
 

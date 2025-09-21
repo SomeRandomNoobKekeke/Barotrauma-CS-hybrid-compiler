@@ -8,7 +8,7 @@ And because it accepts any mod you only need one such thing
 ## How to use it:
 Download zip and extract [ Compiler ] into LocalMods, add [luatrauma refs](https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip) to Refs folder
 
-Then you'll need to call `dotnet build .\Compiler.sln -c Release /clp:ErrorsOnly -p WarningLevel=0 -p:ModAssemblyName=%ModAssemblyName% -p:ModRootNamespace=%ModRootNamespace% -p:SourceModDir=%SourceModDir% -p:ModDeployDir=%ModDeployDir%` in [ Compiler ]s folder
+Then you'll need to call `dotnet build .\Compiler.sln -c Release /clp:ErrorsOnly -p WarningLevel=0 -p:ModAssemblyName=%ModAssemblyName% -p:ModRootNamespace=%ModRootNamespace% -p:SourceModDir=%SourceModDir% -p:ModDeployDir=%ModDeployDir%` in Compilers folder
 
 You can just drag and drop you "in memory" mod folder into "Compile folder.cmd" script  
 Or copy paste "Example mod compilation script.cmd" into your "in memory" mod folder, change the vars there and run it

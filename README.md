@@ -6,13 +6,14 @@ It's 99% https://github.com/MapleWheels/VSProjectSkeleton but instead of compili
 And because it accepts any mod you only need one such thing
 
 ## How to use it:
-Download it and drop it into LocalMods, add luatrauma refs
+Download zip and extract [ Compiler ] into LocalMods, add [luatrauma refs](https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip) to Refs folder
 
-Then you'll need to call `dotnet build .\Compiler.sln -c Release /clp:ErrorsOnly -p WarningLevel=0 -p:ModAssemblyName=%ModAssemblyName% -p:ModRootNamespace=%ModRootNamespace% -p:SourceModDir=%SourceModDir% -p:ModDeployDir=%ModDeployDir%` in that folder
+Then you'll need to call `dotnet build .\Compiler.sln -c Release /clp:ErrorsOnly -p WarningLevel=0 -p:ModAssemblyName=%ModAssemblyName% -p:ModRootNamespace=%ModRootNamespace% -p:SourceModDir=%SourceModDir% -p:ModDeployDir=%ModDeployDir%` in Compilers folder
 
-i've made [a cmd script](https://github.com/SomeRandomNoobKekeke/Barotrauma-CS-hybrid-compiler/blob/main/Example%20Compile.cmd) that you can just put in your "in memory" mod folder, change some vars there and then click it
+You can just drag and drop you "in memory" mod folder into "Compile folder.cmd" script  
+Or copy paste "Example mod compilation script.cmd" into your "in memory" mod folder, change the vars there and run it
 
-I have "f5 anything" extension in VSCode, so i just press f5 and it's compiling
+I have "f5 anything" extension in VSCode, so i just press f5 to compile it
 
 ## Why???:
 Big "in memory" mods might take too much time to compile for users and there's no easy way to hot reload precompiled mod  
@@ -23,7 +24,8 @@ Also you can't release "in memory" mods with nuget packages, it has to be precom
 So i develop mods using cl_reloadlua and then f5 it when i want to release it
 
 ## Notes:
-It's also copies Content/** Lua/** CSharp/RunConfig.xml files, check https://github.com/SomeRandomNoobKekeke/Barotrauma-CS-hybrid-compiler/blob/main/Assets/Assets.csproj and edit it as you want
+It's also copies Content/** Lua/** CSharp/RunConfig.xml files, check https://github.com/SomeRandomNoobKekeke/Barotrauma-CS-hybrid-compiler/blob/main/Assets/Assets.csproj and edit it as you want  
+I don't copy filelist so make another one
 
 if you want warnigns remove `/clp:ErrorsOnly` and set `-p WarningLevel=4`
 

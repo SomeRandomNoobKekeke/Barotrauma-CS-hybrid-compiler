@@ -10,5 +10,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)SharedSource\Compile pls.cs" />
+    <Compile Include="$(SourceModDir)CSharp/Shared/**/*.cs" />
   </ItemGroup>
 </Project>

@@ -71,7 +71,6 @@
 
   <ItemGroup>
     <Compile Include="$(SourceModDir)CSharp/Server/**/*.cs" />
-    <Compile Include="$(SourceModDir)CSharp/Shared/**/*.cs" />
   </ItemGroup>
 
 </Project>

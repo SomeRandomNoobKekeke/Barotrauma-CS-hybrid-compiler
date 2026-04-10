@@ -1,1 +1,2 @@
-put https://github.com/evilfactory/LuaCsForBarotrauma/releases/download/latest/luacsforbarotrauma_refs.zip here
+- The libraries for this folder must be downloaded separately on the LuaCsForBarotrauma github page.
+- If you have the Refs.zip file, you should extract it here.

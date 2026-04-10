@@ -3,6 +3,7 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+LUATRAMA_DEBUG_LOCALMODS_MYMODDIR/
 [Rr]efs/
 *.DotSettings.user
 

@@ -24,15 +24,8 @@ Also you can't release "in memory" mods with nuget packages, it has to be precom
 So i develop mods using cl_reloadlua and then f5 it when i want to release it
 
 ## Notes:
-It's also copies Content/** Lua/** CSharp/RunConfig.xml files, check https://github.com/SomeRandomNoobKekeke/Barotrauma-CS-hybrid-compiler/blob/main/Assets/Assets.csproj and edit it as you want  
-I don't copy filelist so make another one
-
-if you want warnigns remove `/clp:ErrorsOnly` and set `-p WarningLevel=4`
-
-Sometimes it fails with "can't access stuff, blocked by another process", just as original VSProjectSkeleton actually, f5 until you make it ig
-
-Also i'm not batch/MSBuild expert, used it for the first time in my life, not sure if it works on other systems, works at least on windows 11  
-Scripts for other systems, advices are welcome
+If you need to copy some files you can create "CopyFiles.targets" in mod folder and Assets.csproj will import it
+Check CopyFiles.targets.Example for example
 
 
 

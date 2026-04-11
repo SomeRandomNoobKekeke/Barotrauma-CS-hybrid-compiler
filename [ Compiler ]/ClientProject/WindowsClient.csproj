@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\SharedProject\SharedProject.projitems" Label="Shared" />
-  <Import Project="../Build.props"/>
-  
+  <Import Project="../Build.props" />
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DefineConstants>TRACETRACE;CLIENT;WINDOWS</DefineConstants>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
@@ -32,4 +32,8 @@
     <Copy SourceFiles="@(Assemblies)" DestinationFiles="$(ModDeployDir)bin\Client\Windows\$(TargetName).dll" />
     <Copy SourceFiles="@(DepsFiles)" DestinationFiles="$(ModDeployDir)bin\Client\Windows\$(TargetName).deps.json" />
   </Target>
+
+  <ItemGroup>
+    <Compile Include="$(SourceModDir)CSharp/Client/**/*.cs" />
+  </ItemGroup>
 </Project>

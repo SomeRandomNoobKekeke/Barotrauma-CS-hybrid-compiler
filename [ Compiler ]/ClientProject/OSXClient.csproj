@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <Import Project="..\SharedProject\SharedProject.projitems" Label="Shared" />
-  <Import Project="../Build.props"/>
+  <Import Project="../Build.props" />
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DefineConstants>TRACE;OSX;CLIENT</DefineConstants>
@@ -30,5 +30,9 @@
     <Copy SourceFiles="@(Assemblies)" DestinationFiles="$(ModDeployDir)bin\Client\OSX\$(TargetName).dll" />
     <Copy SourceFiles="@(DepsFiles)" DestinationFiles="$(ModDeployDir)bin\Client\OSX\$(TargetName).deps.json" />
   </Target>
+
+  <ItemGroup>
+    <Compile Include="$(SourceModDir)CSharp/Client/**/*.cs" />
+  </ItemGroup>
 
 </Project>

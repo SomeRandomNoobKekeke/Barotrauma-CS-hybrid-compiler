@@ -1,3 +1,5 @@
+Currently borked, don't use it, wait until i update it to https://github.com/Luatrauma/LuaCsModTemplate/commit/5602ff179f59100610745aaf2540010af93095e6
+
 ## What is this:
 
 A tool for compiling any barotrauma C# "in memory" mod into dll mod in one click
